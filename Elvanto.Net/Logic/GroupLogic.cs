@@ -63,6 +63,7 @@ namespace Elvanto.Net.Logic
 
         public async Task<GroupsResponse> GetResponseAsync(GroupsRequest request = null)
         {
+
             request = request ?? new GroupsRequest
             {
                 PageSize = _pageSize
