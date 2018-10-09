@@ -1,14 +1,7 @@
-﻿using Elvanto.Net.Core;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using Elvanto.Net.Models;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using System;
-using Elvanto.Net.Models;
 
 namespace Elvanto.Net.Tests
 {
