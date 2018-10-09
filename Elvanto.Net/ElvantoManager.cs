@@ -28,10 +28,10 @@ namespace Elvanto.Net
 
 #if NET_CORE
 
-        public ElvantoManager(IOptions<MailChimpOptions> optionsAccessor) : base(optionsAccessor)
+        public ElvantoManager(IOptions<ElvantoOptions> optionsAccessor) : base(optionsAccessor)
         {
             this.Groups = new GroupLogic(ElvantoOptions);
-            this.People = new PeopleLogic(ElvantoOptions);
+            this.People = new PersonLogic(ElvantoOptions);
         }
 
 #else

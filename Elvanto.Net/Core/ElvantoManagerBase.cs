@@ -1,4 +1,9 @@
-﻿namespace Elvanto.Net.Core
+﻿#if NET_CORE
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+#endif
+
+namespace Elvanto.Net.Core
 {
     public abstract class ElvantoManagerBase
     {

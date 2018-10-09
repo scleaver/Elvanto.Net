@@ -20,7 +20,7 @@ namespace Elvanto.Net.Models
         public Guid CategoryId { get; set; }
 
         [JsonProperty("firstname")]
-        public string Firstname { get; set; }
+        public string FirstName { get; set; }
 
         [JsonProperty("preferred_name")]
         public string PreferredName { get; set; }
@@ -29,7 +29,7 @@ namespace Elvanto.Net.Models
         public string MiddleName { get; set; }
 
         [JsonProperty("lastname")]
-        public string Lastname { get; set; }
+        public string LastName { get; set; }
 
         [JsonProperty("email")]
         public string Email { get; set; }
