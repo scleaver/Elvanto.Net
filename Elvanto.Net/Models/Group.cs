@@ -1,7 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using Elvanto.Net.JsonConverters;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Elvanto.Net.Models
 {
@@ -53,7 +53,15 @@ namespace Elvanto.Net.Models
         public string MeetingFrequency { get; set; }
 
         [JsonProperty("people")]
-        public People People { get; set; }
+        [JsonConverter(typeof(SingleOrArrayConverter<People>))]
+        public List<People> People { get; set; }
+
+        [JsonProperty("locations")]
+        public IEnumerable<string> Locations { get; set; }
+
+        [JsonProperty("demographics")]
+        [JsonConverter(typeof(SingleOrArrayConverter<Demographics>))]
+        public List<Demographics> Demographics { get; set; }
     }
 
     public class People
