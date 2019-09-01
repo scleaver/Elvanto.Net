@@ -66,4 +66,10 @@
     <DefineConstants>NET_CORE</DefineConstants>
   </PropertyGroup>
 
+  <Target Name="IgnoreRunCodeAnalysis" Condition=" '$(RunCodeAnalysis)' == 'true' " BeforeTargets="RunCodeAnalysis">
+    <Message Importance="normal" Text="Set RunCodeAnalysisOnThisProject to false" />
+    <PropertyGroup>
+      <RunCodeAnalysisOnThisProject>false</RunCodeAnalysisOnThisProject>
+    </PropertyGroup>
+  </Target>
 </Project>
