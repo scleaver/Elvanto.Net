@@ -26,7 +26,7 @@
   <PropertyGroup>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>Elvanto.Net</PackageId>
-    <Version>0.3.0</Version>
+    <Version>1.0.0</Version>
     <Authors>Seth Cleaver</Authors>
     <Company></Company>
     <Product>Elvanto.Net</Product>
@@ -38,10 +38,9 @@
     <RepositoryUrl>https://github.com/scleaver/Elvanto.Net</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <NeutralLanguage />
-    <PackageReleaseNotes>
-      .NET Standard 1.3
-      .NETFramework 4.5
-    </PackageReleaseNotes>
+    <PackageReleaseNotes>.NET Standard 1.3
+.NETFramework 4.5
+</PackageReleaseNotes>
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>Elvanto</PackageTags>
     <PackageLicenseUrl></PackageLicenseUrl>
