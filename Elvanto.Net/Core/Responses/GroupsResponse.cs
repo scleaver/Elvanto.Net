@@ -12,11 +12,6 @@ namespace Elvanto.Net.Core.Responses
 
     public class GroupsData : BaseDataSet
     {
-        public GroupsData()
-        {
-            Groups = new HashSet<Group>();
-        }
-
         [JsonProperty("group")]
         public IEnumerable<Group> Groups{ get; set; }
     }
