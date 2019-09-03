@@ -1,13 +1,8 @@
 ﻿using Elvanto.Net.Core;
 using Elvanto.Net.Interfaces;
 using Elvanto.Net.Logic;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-#if NET_CORE
 using Microsoft.Extensions.Options;
-#endif
+using System;
 
 namespace Elvanto.Net
 {
@@ -23,24 +18,13 @@ namespace Elvanto.Net
         {
             this.Groups = new GroupLogic(ElvantoOptions);
             this.People = new PersonLogic(ElvantoOptions);
-
         }
-
-#if NET_CORE
 
         public ElvantoManager(IOptions<ElvantoOptions> optionsAccessor) : base(optionsAccessor)
         {
             this.Groups = new GroupLogic(ElvantoOptions);
             this.People = new PersonLogic(ElvantoOptions);
         }
-
-#else
-        public ElvantoManager(ElvantoOptions optionsAccessor) : base(optionsAccessor)
-        {
-            this.Groups = new GroupLogic(ElvantoOptions);
-            this.People = new PersonLogic(ElvantoOptions);
-        }
-#endif
 
         public IGroupLogic Groups { get; }
         public IPersonLogic People {get; }
