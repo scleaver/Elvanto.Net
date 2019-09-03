@@ -1,7 +1,4 @@
-﻿#if NET_CORE
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
-#endif
+﻿using Microsoft.Extensions.Options;
 
 namespace Elvanto.Net.Core
 {
@@ -14,13 +11,7 @@ namespace Elvanto.Net.Core
             ApiKey = apiKey,
         };
 
-#if NET_CORE
-
         protected ElvantoManagerBase(IOptions<ElvantoOptions> optionsAccessor) => ElvantoOptions = optionsAccessor.Value;
-
-#else
-        protected ElvantoManagerBase(ElvantoOptions options) => ElvantoOptions = options;
-#endif
 
         protected ElvantoManagerBase()
         {
