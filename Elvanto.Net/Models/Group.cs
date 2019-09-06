@@ -62,6 +62,10 @@ namespace Elvanto.Net.Models
         [JsonProperty("demographics")]
         [JsonConverter(typeof(SingleOrArrayConverter<Demographics>))]
         public List<Demographics> Demographics { get; set; }
+
+        [JsonProperty("categories")]
+        [JsonConverter(typeof(SingleOrArrayConverter<GroupCategories>))]
+        public List<GroupCategories> Categories { get; set; }
     }
 
     public class People
