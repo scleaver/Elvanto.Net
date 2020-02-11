@@ -8,17 +8,19 @@ namespace Elvanto.Net.Tests
     {
         protected IElvantoManager ElvantoManager;
 
-        private string _apikey = "add-your-api-key-to-client-secrest.json";
-
-        public IConfiguration Configuration { get; }
+        IConfiguration Configuration { get; set; }
 
         public  ElvantoTest()
         {
-            var config = new ConfigurationBuilder()
-                        .AddJsonFile("client-secrets.json")
-                        .Build();
 
-            _apikey = config["ElvantoApiKey"];
+            // the type specified here is just so the secrets library can 
+            // find the UserSecretId we added in the csproj file
+            var builder = new ConfigurationBuilder()
+                .AddUserSecrets<ElvantoTest>();
+
+            Configuration = builder.Build();
+
+            var _apikey = Configuration["ElvantoApiKey"];
 
             this.ElvantoManager = new ElvantoManager(_apikey);
             RunBeforeTestFixture().Wait();
