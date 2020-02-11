@@ -4,15 +4,15 @@
         <id>Elvanto.Net</id>
         <version>0.2.1.0</version>
         <title>Elvanto.Net</title>
-        <authors>Seth Cleaver</authors>
-        <owners>Elvanto.Net</owners>
-        <projectUrl>https://github.com/scleaver/Elvanto.Net</projectUrl>
+        <authors>Kast Enterpirses Pty Ltd.</authors>
+        <owners>Kast Enterpirses Pty Ltd.</owners>
+        <projectUrl>https://github.com/kast-cloud/Elvanto.Net</projectUrl>
         <licenseUrl></licenseUrl>
         <iconUrl></iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A .NET Wrapper for Elvanto v1.0 API</description>
         <releaseNotes></releaseNotes>
-        <copyright>Copyright © 2018</copyright>
+        <copyright>Copyright © 2020</copyright>
         <tags>Elvanto</tags>
         <summary>
             A very fast, thin, and intuitive .NET Wrapper for the Elvanto v1.0 API.
