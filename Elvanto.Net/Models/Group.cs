@@ -57,7 +57,8 @@ namespace Elvanto.Net.Models
         public List<People> People { get; set; }
 
         [JsonProperty("locations")]
-        public IEnumerable<string> Locations { get; set; }
+        [JsonConverter(typeof(SingleOrArrayConverter<Locations>))]
+        public IEnumerable<Locations> Locations { get; set; }
 
         [JsonProperty("demographics")]
         [JsonConverter(typeof(SingleOrArrayConverter<Demographics>))]
