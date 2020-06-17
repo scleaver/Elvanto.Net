@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elvanto.Net", "Elvanto.Net\Elvanto.Net.csproj", "{38AA202B-0179-4A74-928C-4C7B63C0DE09}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elvanto.Net.Tests", "Elvanto.Net.Tests\Elvanto.Net.Tests.csproj", "{83674F83-FCEB-4EF4-99AF-C0010CA6A7A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elvanto.Net.Tests", "Tests\Elvanto.Net.Tests\Elvanto.Net.Tests.csproj", "{83674F83-FCEB-4EF4-99AF-C0010CA6A7A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
