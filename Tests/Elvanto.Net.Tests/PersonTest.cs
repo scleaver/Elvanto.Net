@@ -11,7 +11,7 @@ namespace Elvanto.Net.Tests
         [Fact]
         public async Task<CustomField> Should_Return_CustomFields()
         {
-            var fields = await this.ElvantoManager.People.GetAllCustomFieldsAsync();
+            var fields = await ElvantoManager.People.GetAllCustomFieldsAsync();
             Assert.NotNull(fields);
             return fields.First();
         }
@@ -22,7 +22,7 @@ namespace Elvanto.Net.Tests
             var expected = "Course Complete";
             var fieldId = new Guid("6ef280ca-ac9f-11e2-9d32-1cdaf3332316");
 
-            var actual = await this.ElvantoManager.People.GetCustomFieldAsync(fieldId);
+            var actual = await ElvantoManager.People.GetCustomFieldAsync(fieldId);
             Assert.NotNull(actual);
             Assert.Equal(expected, actual.Name);
         }
