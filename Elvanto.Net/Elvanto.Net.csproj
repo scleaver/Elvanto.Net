@@ -32,11 +32,4 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.9" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.9" />
   </ItemGroup>
-
-  <!--<Target Name="IgnoreRunCodeAnalysis" Condition=" '$(RunCodeAnalysis)' == 'true' " BeforeTargets="RunCodeAnalysis">
-    <Message Importance="normal" Text="Set RunCodeAnalysisOnThisProject to false" />
-    <PropertyGroup>
-      <RunCodeAnalysisOnThisProject>false</RunCodeAnalysisOnThisProject>
-    </PropertyGroup>
-  </Target>-->
 </Project>
