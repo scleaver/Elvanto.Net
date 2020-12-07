@@ -15,8 +15,8 @@
     <Description>A .NET Wrapper for Elvanto V1.0 API</Description>
     <Summary>A very fast, thin, and intuitive .NET Wrapper for the Elvanto V1.0 API.</Summary>
     <Copyright>Copyright © 2018</Copyright>
-    <PackageProjectUrl>https://github.com/scleaver/Elvanto.Net</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/scleaver/Elvanto.Net</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/kast-cloud/Elvanto.Net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kast-cloud/Elvanto.Net</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <NeutralLanguage />
     <PackageReleaseNotes>.NET Standard 2.0</PackageReleaseNotes>
